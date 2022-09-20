@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04c36af1-f4c5-4acb-b48b-06c74011daf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../HW01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/HW01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/out/production/HW01/DrawingTrangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW01/src/DrawingTrangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/Linked List.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/out/production/Linked List/ListExercise/DLList1$typeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/out/production/Linked List/ListExercise/DLList1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/out/production/Linked List/ListExercise/DLList2$typeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/out/production/Linked List/ListExercise/DLList2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/out/production/Linked List/ListExercise/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/src/ListExercise/DLList1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/src/ListExercise/DLList2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SLLists/SLLists/src/ListExercise/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../discussion01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../discussion01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../discussion01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../discussion01/discussion01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../discussion01/src/discussion1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/CheckLabConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/Collatz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/GetEnvironmentVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/HelloNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/lab1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/CheckLabConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/Collatz.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/GetEnvironmentVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/HelloNumbers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/HelloWorld.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/lab1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/Arithmetic/Arithmetic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/Arithmetic/ArithmeticTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/DebugExercise/DebugExercise1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/DebugExercise/DebugExercise2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/IntList/AddConstantTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/IntList/IntList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/IntList/IntListExercises.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/IntList/Primes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/IntList/SetToZeroIfMaxFELTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/IntList/SquarePrimesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/Arithmetic/Arithmetic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/Arithmetic/ArithmeticTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/DebugExercise/DebugExercise1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/DebugExercise/DebugExercise2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/IntList/AddConstantTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/IntList/IntList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/IntList/IntListExercises.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/IntList/Primes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/IntList/SetToZeroIfMaxFELTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/target/classes/IntList/SquarePrimesTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deque/LinkedListDequeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh2/GuitarHeroLite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh2/GuitarPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh2/GuitarString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh2/TTFAF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gh2/TestGuitarString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Hao Wang\Git Repository\CS61B\skeleton-sp21\library-sp21\javalib" />
+        <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EywZDV16Mcjum1hcKdlCVhSDd6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Hao Wang/CS Learning/Java Exercise/Exercise-in-CS61B-2012-fall/proj1",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04c36af1-f4c5-4acb-b48b-06c74011daf9" name="Changes" comment="" />
+      <created>1663581184966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663581184966</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
