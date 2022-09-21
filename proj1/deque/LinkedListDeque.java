@@ -28,6 +28,13 @@ public class LinkedListDeque<type> {
         sentinel.prev = sentinel;
     }
 
+    public boolean isEmpty(){
+        if (sentinel.next != sentinel){
+            return false;
+        }
+        return true;
+    }
+
     public void addFirst(type a){
         size += 1;
         sentinel.next = new Node(a, sentinel, sentinel.next);
@@ -53,19 +60,25 @@ public class LinkedListDeque<type> {
     }
 
     public type removeFirst(){
-        size -= 1;
-        type a = sentinel.next.item;
-        sentinel.next = sentinel.next.next;
-        sentinel.next.prev = sentinel;
-        return a;
+        if (size > 0) {
+            size -= 1;
+            type a = sentinel.next.item;
+            sentinel.next = sentinel.next.next;
+            sentinel.next.prev = sentinel;
+            return a;
+        }
+        return null;
     }
 
     public type removeLast(){
-        size -= 1;
-        type a = sentinel.prev.item;
-        sentinel.prev = sentinel.prev.prev;
-        sentinel.prev.next = sentinel;
-        return a;
+        if (size > 0) {
+            size -= 1;
+            type a = sentinel.prev.item;
+            sentinel.prev = sentinel.prev.prev;
+            sentinel.prev.next = sentinel;
+            return a;
+        }
+        return null;
     }
 
     public static void main(String[] args){
