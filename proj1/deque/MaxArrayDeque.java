@@ -10,13 +10,7 @@ public class MaxArrayDeque<type> extends ArrayDeque<type> {
     }
 
     public type max() {
-        type maxItem = this.get(0);
-        for (int i = 0; i < size(); i += 1) {
-            if (self.compare(maxItem, get(i)) < 0) {
-                maxItem = get(i);
-            }
-        }
-        return maxItem;
+        return max(self);
     }
 
     public type max(Comparator<type> c) {

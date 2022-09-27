@@ -30,19 +30,14 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
         sentinel.prev = sentinel;
     }
 
-    public boolean isEmpty() {
-        if (sentinel.next != sentinel) {
-            return false;
-        }
-        return true;
-    }
-
+    @Override
     public void addFirst(type a) {
         size += 1;
         sentinel.next = new Node(a, sentinel, sentinel.next);
         sentinel.next.next.prev = sentinel.next;
     }
 
+    @Override
     public void addLast(type a) {
         size += 1;
         sentinel.prev = new Node(a, sentinel.prev, sentinel);
@@ -57,10 +52,12 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
         return sentinel.prev.item;
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public type removeFirst() {
         if (size > 0) {
             size -= 1;
@@ -72,6 +69,7 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
         return null;
     }
 
+    @Override
     public type removeLast() {
         if (size > 0) {
             size -= 1;
@@ -90,6 +88,7 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
             wizPos = sentinel.next;
         }
 
+        @Override
         public boolean hasNext() {
             if (wizPos != sentinel) {
                 return true;
@@ -97,6 +96,7 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
             return false;
         }
 
+        @Override
         public type next() {
             type returnItem = wizPos.item;
             wizPos = wizPos.next;
@@ -104,10 +104,12 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
         }
     }
 
+    @Override
     public Iterator<type> iterator() {
         return new LLDequeIterator();
     }
 
+    @Override
     public type get(int i) {
         type returnItem = null;
         int index = 0;
@@ -121,6 +123,7 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
         return returnItem;
     }
 
+    @Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -142,6 +145,7 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
         return true;
     }
 
+    @Override
     public void printDeque() {
         System.out.print("{");
         for (int i = 0; i < size - 1; i += 1) {

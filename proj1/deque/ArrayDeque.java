@@ -8,6 +8,11 @@ public class ArrayDeque<type> implements Deque<type>, Iterable<type> {
     private int Front = 3;
     private int Rear = 4;
 
+    public ArrayDeque(int capacity) {
+        items = (type[]) new Object[capacity];
+        size = 0;
+    }
+
     public ArrayDeque() {
         items = (type[]) new Object[8];
         size = 0;
@@ -31,13 +36,6 @@ public class ArrayDeque<type> implements Deque<type>, Iterable<type> {
             Rear = size;
             items = b;
         }
-    }
-    @Override
-    public boolean isEmpty() {
-        if (size == 0) {
-            return true;
-        }
-        return false;
     }
 
     @Override
