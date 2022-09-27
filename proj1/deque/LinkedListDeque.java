@@ -144,9 +144,9 @@ public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
 
     public void printDeque() {
         System.out.print("{");
-        for (type i: this) {
-            System.out.print(i + " ");
+        for (int i = 0; i < size - 1; i += 1) {
+            System.out.print(get(i) + " ");
         }
-        System.out.println("}");
+        System.out.println(get(size - 1) + "}");
     }
 }

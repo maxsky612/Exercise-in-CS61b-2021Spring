@@ -74,34 +74,40 @@ public class ArrayDeque<type> implements Deque<type>, Iterable<type> {
     @Override
     public void printDeque() {
         System.out.print("{");
-        for (type i: this) {
-            System.out.print(i + " ");
+        for (int i = 0; i < size - 1; i += 1) {
+            System.out.print(get(i) + " ");
         }
-        System.out.println("}");
+        System.out.println(get(size - 1) + "}");
     }
 
     @Override
     public type removeFirst() {
-        type rmItem = items[(Front + 1) % items.length];
-        items[(Front + 1) % items.length] = null;
-        Front = (Front + 1) % items.length;
-        size -= 1;
-        if (size < items.length * 0.25) {
-            resize(items.length / 4);
+        if (!isEmpty()) {
+            type rmItem = items[(Front + 1) % items.length];
+            items[(Front + 1) % items.length] = null;
+            Front = (Front + 1) % items.length;
+            size -= 1;
+            if (size < items.length / 4) {
+                resize(items.length / 4);
+            }
+            return rmItem;
         }
-        return rmItem;
+        return null;
     }
 
     @Override
     public type removeLast() {
-        type rmItem = items[(Rear - 1 + items.length) % items.length];
-        items[(Rear - 1 + items.length) % items.length] = null;
-        Rear = (Rear - 1 + items.length) % items.length;
-        size -= 1;
-        if (size < items.length / 4) {
-            resize(items.length / 4);
+        if (!isEmpty()) {
+            type rmItem = items[(Rear - 1 + items.length) % items.length];
+            items[(Rear - 1 + items.length) % items.length] = null;
+            Rear = (Rear - 1 + items.length) % items.length;
+            size -= 1;
+            if (size < items.length / 4 && size != 0) {
+                resize(items.length / 4);
+            }
+            return rmItem;
         }
-        return rmItem;
+        return null;
     }
 
     public class getArrayDequeIterator implements Iterator<type> {
