@@ -1,12 +1,14 @@
 package deque;
 
-public class LinkedListDeque<type> {
+import java.util.Iterator;
+
+public class LinkedListDeque<type> implements Iterable<type>, Deque<type>{
     public class Node {
         type item;
         Node prev;
         Node next;
 
-        public Node(type x, Node y, Node z){
+        public Node(type x, Node y, Node z) {
             item = x;
             prev = y;
             next = z;
@@ -15,51 +17,51 @@ public class LinkedListDeque<type> {
     private int size = 0;
     private Node sentinel;
 
-    public LinkedListDeque(type a){
+    public LinkedListDeque(type a) {
         sentinel = new Node(null, null, null);
         sentinel.next = new Node(a, sentinel, sentinel);
         sentinel.prev = sentinel.next;
         size += 1;
     }
 
-    public LinkedListDeque(){
+    public LinkedListDeque() {
         sentinel = new Node(null, null, null);
         sentinel.next = sentinel;
         sentinel.prev = sentinel;
     }
 
-    public boolean isEmpty(){
-        if (sentinel.next != sentinel){
+    public boolean isEmpty() {
+        if (sentinel.next != sentinel) {
             return false;
         }
         return true;
     }
 
-    public void addFirst(type a){
+    public void addFirst(type a) {
         size += 1;
         sentinel.next = new Node(a, sentinel, sentinel.next);
         sentinel.next.next.prev = sentinel.next;
     }
 
-    public void addLast(type a){
+    public void addLast(type a) {
         size += 1;
         sentinel.prev = new Node(a, sentinel.prev, sentinel);
         sentinel.prev.prev.next = sentinel.prev;
     }
 
-    public type getFirst(){
+    public type getFirst() {
         return sentinel.next.item;
     }
 
-    public type getLast(){
+    public type getLast() {
         return sentinel.prev.item;
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
-    public type removeFirst(){
+    public type removeFirst() {
         if (size > 0) {
             size -= 1;
             type a = sentinel.next.item;
@@ -70,7 +72,7 @@ public class LinkedListDeque<type> {
         return null;
     }
 
-    public type removeLast(){
+    public type removeLast() {
         if (size > 0) {
             size -= 1;
             type a = sentinel.prev.item;
@@ -81,22 +83,70 @@ public class LinkedListDeque<type> {
         return null;
     }
 
-    public static void main(String[] args){
-        LinkedListDeque a = new LinkedListDeque();
-        LinkedListDeque b = new LinkedListDeque(1);
-        for (int i = 0; i < 5; i += 1){
-            a.addFirst(i + 1);
+    private class LLDequeIterator implements Iterator<type> {
+        private Node wizPos;
+
+        public LLDequeIterator() {
+            wizPos = sentinel.next;
         }
-        for (int i = 1; i < 5; i += 1){
-            b.addFirst(i + 1);
+
+        public boolean hasNext() {
+            if (wizPos != sentinel) {
+                return true;
+            }
+            return false;
         }
-        for (int i = 0; i < 3; i += 1){
-            a.addLast(i + 1);
-            b.addLast(i + 1);
+
+        public type next() {
+            type returnItem = wizPos.item;
+            wizPos = wizPos.next;
+            return returnItem;
         }
-        a.removeFirst();
-        a.removeLast();
-        b.removeFirst();
-        b.removeLast();
+    }
+
+    public Iterator<type> iterator() {
+        return new LLDequeIterator();
+    }
+
+    public type get(int i) {
+        type returnItem = null;
+        int index = 0;
+        for (type j: this) {
+            returnItem = j;
+            index += 1;
+            if (index == i + 1) {
+                break;
+            }
+        }
+        return returnItem;
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null) {
+            return false;
+        }
+        if (!(o instanceof LinkedListDeque)) {
+            return false;
+        }
+        if (((LinkedListDeque<type>) o).size() != size()) {
+            return false;
+        }
+        for (int i = 0; i < size; i += 1) {
+            if (get(i) != ((LinkedListDeque<type>) o).get(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void printDeque() {
+        System.out.print("{");
+        for (type i: this) {
+            System.out.print(i + " ");
+        }
+        System.out.println("}");
     }
 }
